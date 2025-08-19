@@ -59,6 +59,9 @@ For k8s nodes it is generally containerd
 ```sh
 systemctl restart containerd
 ```
+```sh
+systemctl restart kubelet
+```
 Finally on all machines, add this line to you host file
 <IP of the machine hosting the container> <DNS name you used while generating the server.crt (in the server.config.DNS.1)>
 eg.
